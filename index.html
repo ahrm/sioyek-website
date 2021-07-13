@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Sioyek</title>
+    </head>
+    
+    <body class="body-text-styles">
+        <div id="container" class="center">
+
+            <div id="header" class="center-text main-title">
+                Sioyek
+            </div>
+            
+            <div id="container-body" class="">
+                <ul class="table-of-contents">
+                    <li class="table-of-contents-item">
+                        <h3><a href="#features">Features</a></h3>
+                        <ul>
+                            <li><a href="#quick-open">Quick Open</a></li>
+                            <li><a href="#toc">Table of Contents</a></li>
+                            <li><a href="#smart-jump">Smart Jump</a></li>
+                            <li><a href="#mark">Mark</a></li>
+                            <li><a href="#bookmark">Bookmark</a></li>
+                            <li><a href="#portal">Portals</a></li>
+                            <li><a href="#config">Configuration</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h1 id="features" >Features</h1>
+                <ul class="feature-list">
+                    <li class="feature-list-item" id="quick-open">
+                        <h2>Quick Open</h2>
+                        <div class="description-container">
+                            You can quickly search and open any file you have previously interacted with using sioyek.
+                        </div>
+                        <div class="video-container" >
+                            <video autoplay loop muted width="960" height="540">
+                                <source src="media/recent_docs.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </li>
+                    <li class="feature-list-item" id="toc">
+                        <h2>Table of Contents</h2>
+                        <div class="description-container">
+                            You can search and jump to table of contents entries.
+                        </div>
+
+                        <div class="video-container">
+                            <video autoplay loop muted width="960" height="540" controls>
+                                <source src="media/toc.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="smart-jump">
+                        <h2>Smart Jump</h2>
+
+                        <div class="description-container">
+                            You can jump to any referenced figure or bibliography item <em>even if the PDF file doesn't provide links</em>. You can also
+                            search the names of bibliography items in google scholar/libgen by middle clicking/shif+middle clicking on their name.
+                        </div>
+
+                        <div class="video-container">
+                            <video autoplay loop muted width="960" height="540" controls>
+                                <source src="media/jump.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </li>
+
+                    <li class="feature-list-item" id="mark">
+                        <h2>Mark</h2>
+
+                        <div class="description-container">
+                            Sometimes when reading a document you need to go back a few pages (perhaps to view a definition or something) and
+                            quickly jump back to where you were. You can achieve this by using marks. Marks are named locations within a PDF file
+                            (each mark has a single character name for example 'a' or 'm') which you can quickly jump to using their name. In the
+                            aforementioned example, before going back to the definition you mark your location and later jump back to the mark by
+                            invoking its name. Lower case marks are local to the document and upper case marks are global (this should be very
+                            familiar to you if you have used vim).
+                        </div>
+
+                        <div class="video-container">
+                            <video autoplay loop muted width="960" height="540" controls>
+                                <source src="media/mark.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </li>
+                    <li class="feature-list-item" id="bookmark">
+                        <h2>Bookmarks</h2>
+
+                        <div class="description-container">
+                            Bookmarks are similar to marks except they are named by a text string and they are all global.
+                        </div>
+
+                        <div class="video-container">
+                            <video autoplay loop muted width="960" height="540" controls>
+                                <source src="media/bookmarks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </li>
+
+                    <li class="feature-list-item" id="portal">
+                        <h2>Portals (this feature is most useful for users with multiple monitors)</h2>
+
+                        <div class="description-container">
+                            Suppose you are reading a paragraph which references a figure which is not very close to the current location. Jumping
+                            back and forth between the current paragraph and the figure can be very annoying. Using portals, you can link the
+                            paragraph's location to the figure's location. Sioyek shows the closest portal destination in a separate window (which
+                            is usually placed on a second monitor). This window is automatically updated to show the closest portal destination as
+                            the user navigates the document.
+                        </div>
+
+                        <div class="video-container">
+                            <video autoplay loop muted width="960" height="540" controls>
+                                <source src="media/portal.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="config">
+                        <h2>Configuration</h2>
+                        <div class="description-container">
+                            You can customize all key bindings and some UI elements by editing keys_user.conf and prefs_user.conf. The default
+                            configurations are in keys.conf and prefs.conf.
+                        </div>
+                        
+                        <div class="video-container">
+                            <video autoplay loop muted width="960" height="540" controls>
+                                <source src="media/config.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,57 @@
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="center"] {
+    width: 100%;
+  }
+}
+
+
+.center-text{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+/* <div style="width: 100%; overflow: hidden;">
+     <div style="width: 600px; float: left;"> Left </div>
+     <div style="margin-left: 620px;"> Right </div>
+</div> */
+
+.description-container{
+	/* float: right; */
+	/* width: 33%; */
+}
+
+.video-container{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	pointer-events: none;
+}
+
+.body-text-styles{
+	font-size: 25px;
+}
+
+.main-title{
+	font-size: 70px;
+}
+
+.red-background {
+	background-color: red;
+}
+
+.blue-background {
+	background-color: blue;
+}
+a {color:blue; text-decoration: none;}
+a:visited {color:blue;}
+a:hover {color:blue; text-decoration: underline;}
+a:active {color:blue}
