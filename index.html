@@ -13,6 +13,8 @@
             
             <div id="container-body" class="">
                 <ul class="table-of-contents">
+                    <li><h3 class="table-of-contents-item"><a href="https://github.com/ahrm/sioyek/releases">Download</a></h3></li>
+                    <li class="table-of-contents-item"><h3><a href="https://github.com/ahrm/sioyek">Source</a></h3></li>
                     <li class="table-of-contents-item">
                         <h3><a href="#features">Features</a></h3>
                         <ul>
@@ -23,6 +25,18 @@
                             <li><a href="#bookmark">Bookmark</a></li>
                             <li><a href="#portal">Portals</a></li>
                             <li><a href="#config">Configuration</a></li>
+                        </ul>
+                    </li>
+                    <li class="table-of-contents-item">
+                        <h3><a href="#guide">Guide</a></h3>
+                        <ul>
+                            <li><a href="#basics">Basics</a></li>
+                            <li><a href="#searching">Searching</a></li>
+                            <li><a href="#marks">Marks</a></li>
+                            <li><a href="#bookmarks">Bookmarks</a></li>
+                            <li><a href="#smartjump">Smart Jump</a></li>
+                            <li><a href="#portals">Portals</a></li>
+                            <li><a href="#configuration">Configuration</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -133,6 +147,133 @@
                             <video autoplay loop muted width="960" height="540" controls>
                                 <source src="media/config.mp4" type="video/mp4">
                             </video>
+                        </div>
+                    </li>
+                </ul>
+
+                <h1 id="guide" >Guide</h1>
+                <emph>Note that the keys in this guide are the default keybinding that can be edited by chaning
+                    <code>keys_user.config</code> file (use <code>keys.config</code> as a reference). In fact I highly recommend customizing the keybindings because honestly the
+                    default keybindings are not very good.
+                </emph>
+                <ul class="feature-list">
+                    <li class="feature-list-item" id="basics">
+                        <h2>Basics</h2>
+                        <div class="description-container">
+                            <ul>
+                                <li>Press <code>o</code> to open a new document or <code>shift+o</code> (<code>O</code>) to open a previously opened document.</li>
+                                <li>Use the arrow keys or <code>hjkl</code> for navigation.</li>
+                                <li>Use <code>,</code>/<code>.</code> to go to the previous/next page.</li>
+                                <li>Press <code>space</code>/<code>shift+space</code> to go to the next/previous screen (which is equivalent to scrolling down half of screen width). You can also use <code>PageDown</code> and <code>PageUp</code>.</li>
+                                <li>Press <code>=</code> to zoom out and <code>shift+=</code> (which is <code>+</code>) to zoom in.</li>
+                                <li>Press <code>f11</code> to enter fullscreen mode.</li>
+                                <li>Press <code>f10</code> to fit the document to screen ignoring white page margins.</li>
+                                <li>Press <code>f9</code> to fit the document to screen (including white margins).</li>
+                                <li>Enter <code>gg</code> to go to the first page.</li>
+                                <li>In order to go to a specific page, enter <code>[NUM]gg</code> where <code>[NUM]</code> is the page number. For example in order to go to page 31, enter <code>31gg</code>.</li>
+                                <li>Press <code>shitf+g</code> (<code>G</code>) to go to the last page.</li>
+                                <li>Press <code>t</code> to open table of contents (if it exists).</li>
+                                <li>Use <code>backspace</code> to go back in history. You can also use <code>ctrl+left arrow</code> and
+                                    <code>ctrl+right arrow</code> to navigate backward/forward in history. Also extra mouse buttons can be used to navigate history.</li>
+                                <li>With some text selected, press <code>ss</code> to search the text in google scholar and <code>sl</code> to search it in library genesis.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="searching">
+                        <h2>Searching</h2>
+                        <div class="description-container">
+                            <ul>
+                                <li>Press <code>/</code> to search.</li>
+                                <li>Press <code>n</code>/<code>shift+n</code> to go to the next/previous match.</li>
+                                <li>In order to quickly jump in search results, you can use <code>[NUM]+n</code> where <code>[NUM]</code> is a number.
+                                    For example in order to jump to the 10th next occurance of current search term, enter <code>10n</code>. In fact most
+                                    commands in sioyek can be prefixed with a number N which is equivalent to repeating them N times.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="marks">
+                        <h2>Marks</h2>
+                        <div class="description-container">
+                            <ul>
+                                <li>Press <code>m</code> to set a mark in current location. After you press m, sioyek waits for you to press another
+                                    symbol which is the name of the mark. For example to create a mark named <code>u</code>, enter <code>mu</code>.</li>
+                                <li>In order to go to a mark, press <code>`</code> followed by the name of the mark. For example in order to go to the
+                                    mark in previous example, we enter <code>`u</code>. Note that <code>`</code> is different from the single quote character which is <code>'</code>. <code>`</code> is usually located in the top-left of the keyboard near the escape button.</li>
+                                <li>Note that marks are persistent (they are saved even after sioyek is closed). Lower case marks are local to each file but upper case marks are global.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="bookmarks">
+                        <h2>Bookmarks</h2>
+                        <div class="description-container">
+                            <ul>
+                                <li>Press <code>b</code> to create a bookmark in the current location.</li>
+                                <li>Press <code>gb</code> to search the bookmarks in the current file and <code>g shift+b</code> (that is <code>g</code> followed by capital <code>B</code>) to search all the bookmarks</li>
+                                <li>In order to delete a bookmark, first goto the bookmark and then enter <code>db</code> (<code>d</code>elete the closest <code>b</code>ookmark).</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="smartjump">
+                        <h2>Smart Jump</h2>
+                        <div class="description-container">
+                            <ul>
+                                <li>You can middle click on the name of figures (for example on `4.13' in `Figure 4.13') to jump to the location where
+                                    figure is located (this works even if the document is not linked). You can also click on cited references (for example
+                                    on `12' in `[12]' or on `HL03' in `[BR01, HL03, DJN88]' to go to the reference.</li>
+                                <li>You can middle click on the name of the papers to search them in google scholar or <code>shift+middle click</code>
+                                    to search them in library genesis.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="portals">
+                        <h2>Portals</h2>
+                        <div class="description-container">
+                            <ul>
+                                <li>Press <code>f12</code> to open the helper window. This window automatically displays the closest portal to the current location.</li>
+                                <li>In order to create a portal, press <code>p</code> to enter the current location as the source of the portal. Now you
+                                    navigate to the portal destination and press <code>p</code> again to mark that location as the destination of the
+                                    portal. (note that source and destination don't have to be in the same document, for example you can create a portal from a reference to a paper to the actual paper).</li>
+                                <li>You can also create a portal by pressing <code>p</code> and then clicking (or middle clicking using smart jumps) on
+                                    a link. This automatically creates a link between the current location and the destination of the link.</li>
+                                <li>In order to delete a portal, press <code>dp</code>. This deletes the closest portal to the current location (the
+                                    portal that is being displayed in the helper window).</li>
+                                <li>Sometimes you need to slightly edit a portal (especially when creating a portal using links, because sometimes for
+                                    example a link to a figure doesn't center the figure properly in the screen). In order to do this, press
+                                    <code>shift+p</code>(<code>P</code>) while the portal is active. This takes you to the portal's destination. Now you can
+                                    adjust the destination and once you are done press the back button (by default it is <code>backspace</code>) to go back
+                                    to where you were.</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="configuration">
+                        <h2>Configuration</h2>
+                        <div class="description-container">
+                            <ul>
+                                <li>There are four configuration files, two of which are not meant to be eited by the user (<code>keys.config</code> and
+                                    <code>prefs.config</code>) and two of which are user-editable (<code>keys_user.config</code> and
+                                    <code>prefs_user.config</code>). </li>
+                                <li>In order to edit any configuration, copy the config to the user editable config file and change it there. For
+                                    example suppose we want to change the key that opens the table of contents. We search for `table of contents' in
+                                    <code>keys.config</code> and find the following:
+                                    <div class="code-block"><code>
+                                        # Open table of contents.<br>
+                                        goto_toc            t
+                                    </code></div>
+                                    We copy this line to <code>keys_user.config</code> and change the key. For example in suppose we want to use capital T
+                                    to open the table of contents. We can put the following line in <code>keys_user.config</code>:
+
+                                    <div class="code-block"><code>
+                                        goto_toc            &ltS-t&gt
+                                    </code></div>
+
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
