@@ -72,3 +72,10 @@ code{
 	margin-bottom: 20px;
 	background-color: lightgray;
 }
+
+.desc{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: xx-large;
+}
