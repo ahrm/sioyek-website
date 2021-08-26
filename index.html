@@ -26,6 +26,7 @@
                             <li><a href="#smart-jump">Smart Jump</a></li>
                             <li><a href="#mark">Mark</a></li>
                             <li><a href="#bookmark">Bookmark</a></li>
+                            <li><a href="#highlight">Highlight</a></li>
                             <li><a href="#portal">Portals</a></li>
                             <li><a href="#config">Configuration</a></li>
                         </ul>
@@ -37,6 +38,7 @@
                             <li><a href="#searching">Searching</a></li>
                             <li><a href="#marks">Marks</a></li>
                             <li><a href="#bookmarks">Bookmarks</a></li>
+                            <li><a href="#highlights">Highlights</a></li>
                             <li><a href="#smartjump">Smart Jump</a></li>
                             <li><a href="#portals">Portals</a></li>
                             <li><a href="#configuration">Configuration</a></li>
@@ -116,6 +118,21 @@
                         <div class="video-container">
                             <video autoplay loop muted width="960" height="540" controls>
                                 <source src="media/bookmarks.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                    </li>
+
+                    <li class="feature-list-item" id="highlight">
+                        <h2>Highlights</h2>
+
+                        <div class="description-container">
+                            Highlight text, you can search among the highlights.
+                        </div>
+
+                        <div class="video-container">
+                            <video autoplay loop muted width="960" height="540" controls>
+                                <source src="media/highlights.mp4" type="video/mp4">
                             </video>
                         </div>
 
@@ -216,6 +233,17 @@
                                 <li>Press <code>b</code> to create a bookmark in the current location.</li>
                                 <li>Press <code>gb</code> to search the bookmarks in the current file and <code>g shift+b</code> (that is <code>g</code> followed by capital <code>B</code>) to search all the bookmarks</li>
                                 <li>In order to delete a bookmark, first goto the bookmark and then enter <code>db</code> (<code>d</code>elete the closest <code>b</code>ookmark).</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="feature-list-item" id="highlights">
+                        <h2>Highlights</h2>
+                        <div class="description-container">
+                            <ul>
+                                <li>Select a piece of text and then press <code>h</code> followed by a lower case letter to highlight the selected text (the letter can be though of as the "type" of the highlight). For example you can press <code>hh</code> to create a highlight of type "h". (different types of highlight are colored differently, the color is configurable in <code>prefs.config</code> file)</li>
+                                <li>Press <code>gh</code> to search the highlights in the current file and <code>gH</code> (that is g followed by capital H) to search all the highlights.</li>
+                                <li>In order to delete a highlight, you can click on a highlight and then press <code>dh</code>.</li>
                             </ul>
                         </div>
                     </li>
