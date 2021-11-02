@@ -79,3 +79,10 @@ code{
 	text-align: center;
 	font-size: xx-large;
 }
+
+.youtube-video { 
+	margin: auto;
+	/* width: 80%; */
+	width: 50%;
+	/* padding: 10px; */
+}
